@@ -5,7 +5,8 @@ class Jokepage extends Component {
   render() {
     return (
       <div>
-        <button onClick={this.handleClick}>New Joke</button>
+        <button onClick={this.props.callToApi}>New Joke</button>
+        {this.props.joke && <p>{this.props.joke}</p>}
       </div>
     );
   }

@@ -21,6 +21,9 @@ class App extends Component {
   //do a fetch method here for setJokes to set the state to make the call
   //
   componentDidMount() {
+    this.callToApi();
+  }
+  callToApi = () => {
     fetch(url)
       .then(response => response.json())
       .then(response => {
@@ -29,7 +32,8 @@ class App extends Component {
       .catch(err => {
         console.error(err);
       });
-  }
+  };
+
   render() {
     return (
       <div>
@@ -49,13 +53,11 @@ class App extends Component {
             <Route
               exact
               path="/jokes"
-              render={props => <Jokepage {...props} />}
+              render={props => (
+                <Jokepage callToApi={this.callToApi} joke={this.state.jokes} />
+              )}
             />
-            <Route
-              exact
-              path="/jokes"
-              render={props => <Aboutpage {...props} />}
-            />
+            <Route path="/about" render={props => <Aboutpage {...props} />} />
           </Switch>
         </main>
       </div>

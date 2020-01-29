@@ -7,7 +7,13 @@ class Homepage extends Component {
   render() {
     return (
       <div>
-        <Link to="/jokes">Show Me a Joke</Link>
+        <Link to="/about">
+          <h1>About</h1>
+        </Link>
+
+        <Link to="/jokes">
+          <h1>Show Me a Joke</h1>
+        </Link>
         <p>
           "I've always found that anything worth achieving will always have
           obstacles in the way and you've got to have that drive and
