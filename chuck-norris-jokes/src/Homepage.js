@@ -1,12 +1,13 @@
 import React, { Component } from 'react';
 import './App.css';
+import { Link, Switch, Route } from 'react-router-dom';
 
 class Homepage extends Component {
-  // I want the Homepage to connect to Jokepage when clicked
+  // The homepage should have the image and inspirational quotes. I want the Homepage to connect to Jokepage when clicked
   render() {
     return (
       <div>
-        <Link to={jokes} />
+        <Link to="/jokes">Show Me a Joke</Link>
         <p>
           "I've always found that anything worth achieving will always have
           obstacles in the way and you've got to have that drive and

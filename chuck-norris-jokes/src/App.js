@@ -1,11 +1,11 @@
 import React, { Component } from 'react';
 import './App.css';
-import Jokepage from './Jokepge.js';
+import Jokepage from './Jokepage.js';
 import Aboutpage from './Aboutpage.js';
 import Homepage from './Homepage.js';
-import { Link } from 'react-router-dom';
+import { Link, Switch, Route } from 'react-router-dom';
 
-const jokes = 'http://api.icndb.com/jokes/random?exclude=[explicit]';
+const url = 'http://api.icndb.com/jokes/random?exclude=[explicit]';
 
 class App extends Component {
   constructor(props) {
@@ -18,7 +18,18 @@ class App extends Component {
   setJokes = jokes => {
     this.setState({ jokes });
   };
-
+  //do a fetch method here for setJokes to set the state to make the call
+  //
+  componentDidMount() {
+    fetch(url)
+      .then(response => response.json())
+      .then(response => {
+        this.setState({ jokes: response.value.joke });
+      })
+      .catch(err => {
+        console.error(err);
+      });
+  }
   render() {
     return (
       <div>
@@ -33,12 +44,17 @@ class App extends Component {
             <Route
               exact
               path="/"
-              render={() => <Homepage jokes={jokes} setJokes={this.setJokes} />}
+              render={() => <Homepage setJokes={this.setJokes} />}
             />
             <Route
               exact
-              path="/jokes/"
-              render={props => <Showpage {...props} jokes={jokes} />}
+              path="/jokes"
+              render={props => <Jokepage {...props} />}
+            />
+            <Route
+              exact
+              path="/jokes"
+              render={props => <Aboutpage {...props} />}
             />
           </Switch>
         </main>
@@ -46,32 +62,6 @@ class App extends Component {
     );
   }
 }
-
-//   componentDidMount() {
-//     this.updateState();
-//   }
-//   updateState = () => {
-//     fetch(http://api.icndb.com/jokes/random?exclude=[explicit])
-//         .then(response => response.json())
-//         .then(data => {
-//           this.setState({ jokes: data });
-//         })
-//   };
-
-//   render() {
-//     return (
-//       <>
-//         <div className="header">
-//           <p>Chuck Norris Jokes</p>
-//         </div>
-//         <Jokepage
-//           setup={this.state.jokes.setup}
-//           punchline={this.state.jokes.punchline}
-//         />
-//         <button onClick={this.updateState}>New Joke</button>
-//       </>
-//     );
-//   }
-// }
+//need to connect about page with another button to click from Homepage.
 
 export default App;
