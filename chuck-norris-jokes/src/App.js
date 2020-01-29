@@ -40,8 +40,14 @@ class App extends Component {
         <header>
           <Link to="/">
             <h1>Chuck Norris Jokes</h1>
-            <img src="https://i.imgur.com/gpzGxVZ.jpg" />
           </Link>
+          <p>
+            "I've always found that anything worth achieving will always have
+            obstacles in the way and you've got to have that drive and
+            determination to overcome those obstacles on route to whatever it is
+            that you want to accomplish." Chuck Norris
+          </p>
+          <img src="https://i.imgur.com/gpzGxVZ.jpg" />
         </header>
         <main>
           <Switch>
@@ -53,7 +59,7 @@ class App extends Component {
             <Route
               exact
               path="/jokes"
-              render={props => (
+              render={() => (
                 <Jokepage callToApi={this.callToApi} joke={this.state.jokes} />
               )}
             />
