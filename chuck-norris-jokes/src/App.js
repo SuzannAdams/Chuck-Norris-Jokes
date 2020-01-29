@@ -5,7 +5,7 @@ import Aboutpage from './Aboutpage.js';
 import Homepage from './Homepage.js';
 import { Link } from 'react-router-dom';
 
-const jokes = http://api.icndb.com/jokes/random?exclude=[explicit]
+const jokes = 'http://api.icndb.com/jokes/random?exclude=[explicit]';
 
 class App extends Component {
   constructor(props) {
@@ -25,7 +25,7 @@ class App extends Component {
         <header>
           <Link to="/">
             <h1>Chuck Norris Jokes</h1>
-            <img src="https://imgur.com/OClU3r6"/>
+            <img src="https://i.imgur.com/gpzGxVZ.jpg" />
           </Link>
         </header>
         <main>

@@ -7,17 +7,18 @@ class Aboutpage extends Component {
       <div>
         <button onClick={this.handleClick}>Click me</button>
         <p>
-          About the Developer: Suzann Adams, Educator turned Software Developer
-          in six weeks time. It's still the beginning of the journey for her,
-          hopefully this website that's dedicated to the inspirational Chuck
-          Norris will inspire you and make you smile.
+          About the Developer: Suzann Adams, a Southern California Educator
+          turned Software Developer in six weeks time. It's still the beginning
+          of the Developer's journey for her, hopefully this website that's
+          dedicated to the inspirational Chuck Norris will inspire you and make
+          you smile.
         </p>
         <p>
           Quotes from: https://quotes.thefamouspeople.com/chuck-norris-3721.php
         </p>
         <p>
           Image from:
-          https://www.duffelblog.com/2012/03/chuck-norris-joins-army-immediately-promoted-chairman-of-joint-chiefs/
+          https://fox17.com/news/local/chuck-norris-kicking-his-way-to-bubba-fest-in-tennessee
         </p>
       </div>
     );
