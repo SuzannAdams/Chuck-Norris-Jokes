@@ -28,9 +28,10 @@ class Aboutpage extends Component {
             <li>Myshawne Stallings</li>
             <li>Rixio Barrios</li>
             <li>Mindy Marmol</li>
+            <li>Jennifer Meade</li>
           </ul>
           Without their support and friendship this application would not exist.
-          Thank you!
+          May God bless them as he has with Chuck Norris. Thank you!
         </p>
         <p>APi used: http://www.icndb.com/api/</p>
         <p>
