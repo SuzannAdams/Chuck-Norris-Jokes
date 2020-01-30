@@ -1,16 +1,22 @@
-.container {
+/* .container {
   display: flex;
   flex-direction: column;
-  align-items: center;
-}
+  align-items: right;
+} */
 
-header {
+/* .container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+} */
+
+/* header {
   position: 1;
 }
 
 main {
   position: 2;
-}
+} */
 
 h1,
 p {
@@ -27,4 +33,9 @@ ul {
 
 img {
   margin: 0 auto;
+}
+
+button {
+  margin-top: 25px;
+  font-size: 25px;
 }
