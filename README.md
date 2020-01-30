@@ -1,6 +1,6 @@
 # Website:
 
-![site URL](https://chucknorrisappbysuzann.herokuapp.com/about)
+https://chucknorrisappbysuzann.herokuapp.com/about
 
 ![screen shot 2020-01-29 at 7 39 49 pm](https://media.git.generalassemb.ly/user/24766/files/58955080-42d1-11ea-83a2-91ca9999ad91)
 
@@ -14,7 +14,7 @@ The Chuck Norris Jokes web application that I have created is meant to inspire a
 
 ## Technologies Used:
 
-The technologies used in this application are GitHub,React, JSX, Javascript, HTML, CSS and Flexbox, deployed by Heroku.
+The technologies used in this application are GitHub, React, JSX, Javascript, HTML, CSS and Flexbox, deployed by Heroku.
 
  <!-- Getting Started/Installation Instructions: This would likely describe how to use the application and the steps to fork, clone and run the application. -->
 
@@ -30,4 +30,4 @@ Contributors can open an issue with me to communicate with me on suggestions to 
 
 ## Wireframe
 
-![wireframe](https://files.slack.com/files-pri/T0351JZQ0-FT09FQ20H/img_7656.jpg)
+https://files.slack.com/files-pri/T0351JZQ0-FT09FQ20H/img_7656.jpg
