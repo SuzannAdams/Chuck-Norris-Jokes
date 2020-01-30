@@ -5,7 +5,7 @@ import Aboutpage from './Aboutpage.js';
 import Homepage from './Homepage.js';
 import { Link, Switch, Route } from 'react-router-dom';
 
-const url = 'http://api.icndb.com/jokes/random?exclude=[explicit]';
+const url = 'https://api.icndb.com/jokes/random?exclude=[explicit]';
 
 class App extends Component {
   constructor(props) {
