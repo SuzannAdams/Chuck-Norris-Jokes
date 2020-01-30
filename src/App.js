@@ -18,8 +18,7 @@ class App extends Component {
   setJokes = jokes => {
     this.setState({ jokes });
   };
-  //do a fetch method here for setJokes to set the state to make the call
-  //
+
   componentDidMount() {
     this.callToApi();
   }
@@ -36,7 +35,7 @@ class App extends Component {
 
   render() {
     return (
-      <div className="container">
+      <div>
         <header>
           <Link to="/">
             <h1>Chuck Norris Jokes</h1>
@@ -47,7 +46,12 @@ class App extends Component {
             determination to overcome those obstacles on route to whatever it is
             that you want to accomplish." Chuck Norris
           </p>
-          <img src="https://i.imgur.com/gpzGxVZ.jpg" />
+          <div className="container">
+            <img
+              src="https://i.imgur.com/gpzGxVZ.jpg"
+              alt="Chuck Norris collage"
+            />
+          </div>
         </header>
         <main>
           <Switch>
@@ -70,6 +74,5 @@ class App extends Component {
     );
   }
 }
-//need to connect about page with another button to click from Homepage.
 
 export default App;

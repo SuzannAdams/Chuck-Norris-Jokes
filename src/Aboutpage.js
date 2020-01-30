@@ -1,13 +1,17 @@
 import React, { Component } from 'react';
 import './App.css';
-import { Link, Switch, Route } from 'react-router-dom';
 
 class Aboutpage extends Component {
   render() {
     return (
       <div>
         <h1>About</h1>
-        <img src="http://statusmind.com/images/2013/08/Famous-Facebook-Status-20558.jpg" />
+        <div className="container">
+          <img
+            src="http://statusmind.com/images/2013/08/Famous-Facebook-Status-20558.jpg"
+            alt="Chuck Norris Bowing"
+          />
+        </div>
         <p>
           About the Developer: Suzann Adams, a Southern California Educator
           turned Software Developer in six weeks time. It's still the beginning

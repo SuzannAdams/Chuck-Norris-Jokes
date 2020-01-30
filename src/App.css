@@ -1,22 +1,17 @@
-/* .container {
+.container {
   display: flex;
   flex-direction: column;
-  align-items: right;
-} */
-
-/* .container {
-  display: flex;
   align-items: center;
   justify-content: center;
-} */
-
-/* header {
-  position: 1;
 }
 
-main {
-  position: 2;
-} */
+img {
+  flex-grow: 1;
+  height: null;
+  width: null;
+  align-items: center;
+  justify-content: center;
+}
 
 h1,
 p {
@@ -25,17 +20,18 @@ p {
 
 p {
   font-size: x-large;
+  font-weight: 500;
 }
 
 ul {
   list-style: none;
 }
 
-img {
-  margin: 0 auto;
-}
-
 button {
   margin-top: 25px;
   font-size: 25px;
+}
+
+main {
+  text-align: center;
 }
