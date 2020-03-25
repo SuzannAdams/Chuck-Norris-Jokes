@@ -1,6 +1,6 @@
 # Website:
 
-https://chucknorrisappbysuzann.herokuapp.com/about
+https://chucknorrisappbysuzann.herokuapp.com/
 
 ![Screen Shot 2020-01-30 at 8 22 09 AM](https://user-images.githubusercontent.com/58324606/73468495-b9f10a00-4339-11ea-8c0f-e4e47e9b5d19.png)
 

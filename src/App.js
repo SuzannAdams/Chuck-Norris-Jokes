@@ -14,7 +14,7 @@ class App extends Component {
       jokes: ''
     };
   }
-
+  //setJokes is made into a function called setJokes
   setJokes = jokes => {
     this.setState({ jokes });
   };
@@ -64,6 +64,7 @@ class App extends Component {
               exact
               path="/jokes"
               render={() => (
+                // callToApi is a prop in {} is the value
                 <Jokepage callToApi={this.callToApi} joke={this.state.jokes} />
               )}
             />
